@@ -19,6 +19,9 @@ brew install openssh
 brew install screen
 brew install php
 brew install gmp
+brew install jupyter
+
+
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
@@ -58,6 +61,8 @@ brew cask install balenaetcher
 brew cask install adobe-acrobat-reader
 brew cask install caffeine
 brew cask install visicut
+brew cask install postman
+
 
 
 # Install Source Code Pro Font
