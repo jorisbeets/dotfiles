@@ -19,7 +19,13 @@ brew install openssh
 brew install screen
 brew install php
 brew install gmp
+<<<<<<< HEAD
 brew install geckodriver
+=======
+brew install jupyter
+
+
+>>>>>>> 3651c9918400b4b668a6728d9a96cc23417affc1
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
@@ -59,7 +65,12 @@ brew cask install balenaetcher
 brew cask install adobe-acrobat-reader
 brew cask install caffeine
 brew cask install visicut
+<<<<<<< HEAD
 brew cask install sketchbook
+=======
+brew cask install postman
+
+>>>>>>> 3651c9918400b4b668a6728d9a96cc23417affc1
 
 
 # Install Source Code Pro Font
