@@ -65,12 +65,7 @@ brew cask install balenaetcher
 brew cask install adobe-acrobat-reader
 brew cask install caffeine
 brew cask install visicut
-<<<<<<< HEAD
 brew cask install sketchbook
-=======
-brew cask install postman
-
->>>>>>> 3651c9918400b4b668a6728d9a96cc23417affc1
 
 
 # Install Source Code Pro Font
