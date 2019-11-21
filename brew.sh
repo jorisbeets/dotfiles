@@ -66,6 +66,7 @@ brew cask install adobe-acrobat-reader
 brew cask install caffeine
 brew cask install visicut
 brew cask install sketchbook
+brew cask install visual-studio-code
 
 
 # Install Source Code Pro Font
