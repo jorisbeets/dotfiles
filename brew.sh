@@ -19,6 +19,10 @@ brew install openssh
 brew install screen
 brew install php
 brew install gmp
+brew install postgresql
+brew install postgis
+brew install gdal
+brew install libgeoip
 <<<<<<< HEAD
 brew install geckodriver
 =======
