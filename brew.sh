@@ -23,6 +23,7 @@ brew install postgresql
 brew install postgis
 brew install gdal
 brew install libgeoip
+brew install handbrake
 <<<<<<< HEAD
 brew install geckodriver
 =======
