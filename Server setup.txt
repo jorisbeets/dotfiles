@@ -1,0 +1,73 @@
+1. Update system
+	apt-get update && upgrade
+1a. install nano
+2. Set Hostname: 
+	hostnamectl set-hostname *****
+3. Set hostname in host file: nano /etc/hosts
+	enter local IP address and hostname
+4. Add user: 
+	adduser joris
+5. Add user to sudo group: 
+	adduser joris sudo
+6. Logout and back in as new user.
+7. setup ssh key based authentication:   #ssh copyid is an alternative
+	- create .ssh directory:
+	mkdir .ssh
+	- on local machine:
+	ssh-keygen -b 4096 #generates a rsa key skip if already exists
+	- scp ~/.ssh/id_rsa.pub joris@IP_ADDRESS:~/.ssh/authorized_keys
+	-on server find authorized key #ckeck location.
+8. Set permissions for the .ssh directory
+	sudo chmod 700 ~/.ssh  #directory, read write exec for owner
+	sudo chmod 600~/.ssh/* #files
+9. Exit out of server and ssh into server without password.
+10.Disallow root login over ssh
+	sudo nano /etc/ssh/sshd_config
+	- change two values
+		-PermitRootLogin --> no
+		-PasswordAuthentication --> no
+11.restart ssh service
+	sudo systemctl restart sshd
+12.Setup firewall
+	sudo apt install ufw
+	sudo ufw default allow outgoing
+	sudo ufw default deny incoming
+	sudo ufw allow ssh
+	sudo ufw allow **** #port number for django/flask server
+	sudo ufw enable
+	sudo ufw status
+13. Install zsh
+	sudo apt install zsh
+	exec zsh
+14.Install git
+	apt istall git
+14. Install Oh-my-ZSH
+	git clone
+15. Install powerlevel10K
+	git clone...............
+	Set Theme in .zshrc
+	source .zshrc # and complete auto installer.
+16. Install auto suggestions
+	git clone into .oh_my_zsh/
+17. Install syntax highlighting
+	Oh-My-ZSH
+		git clone into .oh_my_zsh
+18. Plugins(
+	git
+	zsh-autosuggestions
+	last-working-dirs
+	web-search
+	sudo
+	history
+	extract
+	django
+	)
+19. Install pip3
+	sudo apt install python3-pip
+20. Install Conda via Github gist
+21. Allow rsync between local and remote server
+	# This has to be done in 'root' in order to overcome entering the sudo password using the rsync command
+	-Login as SU and create /root/.shh/authorized_keys file.
+	-copy the rsa_id.pud of the local machine into the file.
+	-Make sure that the  /etc/ssh/sshd_conf file = "PermitRootLogin without-password"
+	  
