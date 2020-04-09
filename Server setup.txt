@@ -70,4 +70,8 @@
 	-Login as SU and create /root/.shh/authorized_keys file.
 	-copy the rsa_id.pud of the local machine into the file.
 	-Make sure that the  /etc/ssh/sshd_conf file = "PermitRootLogin without-password"
-	  
+22. Setup automatic updates.
+	#www.libre-software.net/ubuntu-automatic-updates
+	-sudo apt install unattended-upgrades
+	-update 50unattended-upgrades #what
+	-update 20auto-upgrades #when
